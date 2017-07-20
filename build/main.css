@@ -1,0 +1,12 @@
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 1.75em;
+}
+
+.search-codes {
+  max-width: 30%;
+  margin-left: 35%;
+}

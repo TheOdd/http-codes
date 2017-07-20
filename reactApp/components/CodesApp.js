@@ -1,5 +1,6 @@
 import React from 'react';
-import codes from '../codes.json';
+import FilterBox from './FilterBox';
+import CodesList from './CodesList';
 
 class CodesApp extends React.Component {
   constructor(props) {
@@ -8,11 +9,8 @@ class CodesApp extends React.Component {
   render() {
     return (
       <div>
-        <ul>
-          {codes.map(code => {
-            return <li>{code.number} - {code.resp}</li>
-          })}
-        </ul>
+        <FilterBox />
+        <CodesList />
       </div>
     )
   }
