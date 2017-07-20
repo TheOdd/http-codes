@@ -1,0 +1,246 @@
+[
+  {
+    "number": 100,
+    "resp": "Continue"
+  },
+  {
+    "number": 101,
+    "resp": "Switching Protocols"
+  },
+  {
+    "number": 102,
+    "resp": "Processing"
+  },
+  {
+    "number": 200,
+    "resp": "OK"
+  },
+  {
+    "number": 201,
+    "resp": "Created"
+  },
+  {
+    "number": 202,
+    "resp": "Accepted"
+  },
+  {
+    "number": 203,
+    "resp": "Non-Authoritative Information"
+  },
+  {
+    "number": 204,
+    "resp": "No Content"
+  },
+  {
+    "number": 205,
+    "resp": "Reset Content"
+  },
+  {
+    "number": 206,
+    "resp": "Partial Content"
+  },
+  {
+    "number": 207,
+    "resp": "Multi-Status"
+  },
+  {
+    "number": 208,
+    "resp": "Already Reported"
+  },
+  {
+    "number": 226,
+    "resp": "IM Used"
+  },
+  {
+    "number": 300,
+    "resp": "Multiple Choices"
+  },
+  {
+    "number": 301,
+    "resp": "Moved Permanently"
+  },
+  {
+    "number": 302,
+    "resp": "Found"
+  },
+  {
+    "number": 303,
+    "resp": "See Other"
+  },
+  {
+    "number": 304,
+    "resp": "Not Modified"
+  },
+  {
+    "number": 305,
+    "resp": "Use Proxy"
+  },
+  {
+    "number": 306,
+    "resp": "Switch Proxy"
+  },
+  {
+    "number": 307,
+    "resp": "Temporary Redirect"
+  },
+  {
+    "number": 308,
+    "resp": "Permanent Redirect"
+  },
+  {
+    "number": 400,
+    "resp": "Bad Request"
+  },
+  {
+    "number": 401,
+    "resp": "Unauthorized"
+  },
+  {
+    "number": 402,
+    "resp": "Payment Required"
+  },
+  {
+    "number": 403,
+    "resp": "Forbidden"
+  },
+  {
+    "number": 404,
+    "resp": "Not Found"
+  },
+  {
+    "number": 405,
+    "resp": "Method Not Allowed"
+  },
+  {
+    "number": 406,
+    "resp": "Not Acceptable"
+  },
+  {
+    "number": 407,
+    "resp": "Proxy Authentication Required"
+  },
+  {
+    "number": 408,
+    "resp": "Request Timeout"
+  },
+  {
+    "number": 409,
+    "resp": "Conflict"
+  },
+  {
+    "number": 410,
+    "resp": "Gone"
+  },
+  {
+    "number": 411,
+    "resp": "Length Required"
+  },
+  {
+    "number": 412,
+    "resp": "Precondition Failed"
+  },
+  {
+    "number": 413,
+    "resp": "Payload Too Large"
+  },
+  {
+    "number": 414,
+    "resp": "URI Too Longe"
+  },
+  {
+    "number": 415,
+    "resp": "Unsupported Media Type"
+  },
+  {
+    "number": 416,
+    "resp": "Range Not Satisfiable"
+  },
+  {
+    "number": 417,
+    "resp": "Expectation Failed"
+  },
+  {
+    "number": 418,
+    "resp": "I'm a teapot"
+  },
+  {
+    "number": 421,
+    "resp": "Misdirected Request"
+  },
+  {
+    "number": 422,
+    "resp": "Unprocessable Entity"
+  },
+  {
+    "number": 423,
+    "resp": "Locked"
+  },
+  {
+    "number": 424,
+    "resp": "Failed Dependency"
+  },
+  {
+    "number": 426,
+    "resp": "Upgrade Required"
+  },
+  {
+    "number": 428,
+    "resp": "Precondition Required"
+  },
+  {
+    "number": 429,
+    "resp": "Too Many Requests"
+  },
+  {
+    "number": 431,
+    "resp": "Request Header Fields Too Large"
+  },
+  {
+    "number": 451,
+    "resp": "Unavailable For Legal Reasons"
+  },
+  {
+    "number": 500,
+    "resp": "Internal Server Error"
+  },
+  {
+    "number": 501,
+    "resp": "Not Implemented"
+  },
+  {
+    "number": 502,
+    "resp": "Bad Gateway"
+  },
+  {
+    "number": 503,
+    "resp": "Service Unavailable"
+  },
+  {
+    "number": 504,
+    "resp": "Gateway Timeout"
+  },
+  {
+    "number": 505,
+    "resp": "HTTP Version Not Supported"
+  },
+  {
+    "number": 506,
+    "resp": "Variant Also Negotiates"
+  },
+  {
+    "number": 507,
+    "resp": "Insufficient Storage"
+  },
+  {
+    "number": 508,
+    "resp": "Loop Detected"
+  },
+  {
+    "number": 510,
+    "resp": "Not Extended"
+  },
+  {
+    "number": 511,
+    "resp": "Network Authentication Required"
+  }
+]

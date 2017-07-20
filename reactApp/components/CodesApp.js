@@ -1,4 +1,5 @@
 import React from 'react';
+import codes from '../codes.json';
 
 class CodesApp extends React.Component {
   constructor(props) {
@@ -6,7 +7,13 @@ class CodesApp extends React.Component {
   }
   render() {
     return (
-      <h1>Placeholder</h1>
+      <div>
+        <ul>
+          {codes.map(code => {
+            return <li>{code.number} - {code.resp}</li>
+          })}
+        </ul>
+      </div>
     )
   }
 }
