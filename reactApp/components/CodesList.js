@@ -1,5 +1,6 @@
 import React from 'react';
 import codes from '../codes.json';
+import uuidv1 from 'uuid/v1';
 
 class CodesList extends React.Component {
   constructor(props) {
@@ -8,7 +9,7 @@ class CodesList extends React.Component {
   render() {
     return (
       <ul style={{marginLeft: '35%'}}>
-        {codes.map(code => <li>{code.number} - {code.resp}</li>)}
+        {codes.map(code => <li key={uuidv1()}>{code.number} - {code.resp}</li>)}
       </ul>
     )
   }
