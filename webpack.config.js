@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 
 module.exports = {
-  entry: './reactApp/app.js',
+  entry: './frontend/app.js',
   output: {
     path: __dirname + '/build',
     filename: 'app.bundle.js'
