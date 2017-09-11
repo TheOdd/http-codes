@@ -1,5 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import CodesApp from './components/CodesApp';
+import { render } from 'react-dom';
+import { configureStore, history } from './store/configureStore';
+import Root from './containers/Root';
 
-ReactDOM.render(<CodesApp />, document.getElementById('root'))
+const store = configureStore();
+
+render(
+    <Root store={store} history={history} />,
+    document.getElementById('root')
+);
