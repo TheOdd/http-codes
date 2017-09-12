@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 import FilterBox from '../components/FilterBox';
 import CodesList from '../components/CodesList';
 
-const AppContainer = ({ text }) => {
+const AppContainer = ({ text, dispatch }) => {
     return (
         <div>
-          <FilterBox />
+          <FilterBox dispatch={dispatch} text={text}/>
           <CodesList text={text}/>
         </div>
     );
@@ -25,7 +25,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-
+      dispatch: dispatch
     };
 };
 

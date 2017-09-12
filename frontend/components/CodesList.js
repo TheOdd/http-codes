@@ -6,7 +6,11 @@ import PropTypes from 'prop-types';
 const CodesList = ( { text } ) => {
   return (
       <ul style={{marginLeft: '35%'}}>
-        {codes.map(code => <li key={uuidv1()}>{code.number} - {code.resp}</li>)}
+        {codes.map(code => {
+          if (code.number.toString().indexOf(text) != -1) {
+            return <li key={uuidv1()}>{code.number} - {code.resp}</li>
+          }
+      })}
       </ul>
   )
 }

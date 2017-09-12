@@ -1,16 +1,11 @@
 import React from 'react';
 
 class FilterBox extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      text: ''
-    }
-  }
   handleChange(e) {
-    this.setState({
-      text: e.target.value
-    })
+    this.props.dispatch({
+      text: e.target.value,
+      type: "UPDATE_TEXT"
+    });
   }
   handleSubmit(e) {
     e.preventDefault()
@@ -22,7 +17,7 @@ class FilterBox extends React.Component {
           <div className="form-group">
             <div className="input-group">
               <span className="input-group-addon"><i className="glyphicon glyphicon-search"></i></span>
-              <input type="text" className="form-control" onChange={e => this.handleChange(e)} value={this.state.text}></input>
+              <input type="text" className="form-control" onChange={e => this.handleChange(e)} value={this.props.text}></input>
             </div>
           </div>
         </form>
