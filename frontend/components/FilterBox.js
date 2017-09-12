@@ -17,7 +17,7 @@ class FilterBox extends React.Component {
           <div className="form-group">
             <div className="input-group">
               <span className="input-group-addon"><i className="glyphicon glyphicon-search"></i></span>
-              <input type="text" className="form-control" onChange={e => this.handleChange(e)} value={this.props.text}></input>
+              <input placeholder="Start typing a response code number." type="text" className="form-control" onChange={e => this.handleChange(e)} value={this.props.text}></input>
             </div>
           </div>
         </form>
