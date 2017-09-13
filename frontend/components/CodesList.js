@@ -3,6 +3,7 @@ import codes from '../codes.json';
 import uuidv1 from 'uuid/v1';
 import PropTypes from 'prop-types';
 import { Modal } from 'react-bootstrap';
+import ReactHtmlParser from 'react-html-parser';
 
 class CodesList extends React.Component {
   constructor() {
@@ -48,7 +49,7 @@ class CodesList extends React.Component {
                 <Modal.Title>{this.state.currentCode.number} - {this.state.currentCode.resp}</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <p>{this.state.currentCode.desc}</p>
+                <p>{ReactHtmlParser(this.state.currentCode.desc)}</p>
               </Modal.Body>
             </div>
           ) : null}
