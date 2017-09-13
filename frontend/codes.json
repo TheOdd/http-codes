@@ -2,7 +2,7 @@
   {
     "number": 100,
     "resp": "Continue",
-    "desc": "The server has received the request headers and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). Sending a large request body to a server after a request has been rejected for inappropriate headers would be inefficient. To have a server check the request's headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body. The response 417 Expectation Failed indicates the request should not be continued."
+    "desc": "The server has received the request headers and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a <a href='https://en.wikipedia.org/wiki/POST_(HTTP)'>POST</a> request). Sending a large request body to a server after a request has been rejected for inappropriate headers would be inefficient. To have a server check the request's headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body. The response 417 Expectation Failed indicates the request should not be continued."
   },
   {
     "number": 101,
@@ -32,7 +32,7 @@
   {
     "number": 203,
     "resp": "Non-Authoritative Information",
-    "desc": "The server is a transforming proxy (e.g. a Web accelerator) that received a 200 OK from its origin, but is returning a modified version of the origin's response."
+    "desc": "The server is a transforming proxy (e.g. a <a href='https://en.wikipedia.org/wiki/Web_accelerator'>Web accelerator</a>) that received a 200 OK from its origin, but is returning a modified version of the origin's response."
   },
   {
     "number": 204,
@@ -47,12 +47,12 @@
   {
     "number": 206,
     "resp": "Partial Content",
-    "desc": "The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams."
+    "desc": "The server is delivering only part of the resource (<a href='https://en.wikipedia.org/wiki/Byte_serving'>byte serving</a>) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams."
   },
   {
     "number": 207,
     "resp": "Multi-Status",
-    "desc": "The message body that follows is an XML message and can contain a number of separate response codes, depending on how many sub-requests were made."
+    "desc": "The message body that follows is an <a href='https://en.wikipedia.org/wiki/XML'>XML</a> message and can contain a number of separate response codes, depending on how many sub-requests were made."
   },
   {
     "number": 208,
@@ -67,12 +67,12 @@
   {
     "number": 300,
     "resp": "Multiple Choices",
-    "desc": "Indicates multiple options for the resource from which the client may choose (via agent-driven content negotiation). For example, this code could be used to present multiple video format options, to list files with different filename extensions, or to suggest word-sense disambiguation."
+    "desc": "Indicates multiple options for the resource from which the client may choose (via <a href='https://en.wikipedia.org/wiki/Content_negotiation#Agent-driven'>agent-driven content negotiation</a>). For example, this code could be used to present multiple video format options, to list files with different <a href='https://en.wikipedia.org/wiki/Filename_extension'>filename extensions</a>, or to suggest <a href='https://en.wikipedia.org/wiki/Word-sense_disambiguation'>word-sense disambiguation</a>."
   },
   {
     "number": 301,
     "resp": "Moved Permanently",
-    "desc": "This and all future requests should be directed to the given URI."
+    "desc": "This and all future requests should be directed to the given <a href='https://en.wikipedia.org/wiki/Uniform_resource_identifier'>URI</a>."
   },
   {
     "number": 302,
@@ -82,17 +82,17 @@
   {
     "number": 303,
     "resp": "See Other",
-    "desc": "The response to the request can be found under another URI using a GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a redirect with a separate GET message."
+    "desc": "The response to the request can be found under another <a href='https://en.wikipedia.org/wiki/Uniform_resource_identifier'>URI</a> using a GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a redirect with a separate GET message."
   },
   {
     "number": 304,
     "resp": "Not Modified",
-    "desc": "Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy."
+    "desc": "Indicates that the resource has not been modified since the version specified by the <a href='https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_Headers'>request headers</a> If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy."
   },
   {
     "number": 305,
     "resp": "Use Proxy",
-    "desc": "The requested resource is available only through a proxy, the address for which is provided in the response. Many HTTP clients (such as Mozilla and Internet Explorer) do not correctly handle responses with this status code, primarily for security reasons."
+    "desc": "The requested resource is available only through a proxy, the address for which is provided in the response. Many HTTP clients (such as <a href='https://en.wikipedia.org/wiki/Mozilla'>Mozilla</a> and <a href='https://en.wikipedia.org/wiki/Internet_Explorer'>Internet Explorer</a>) do not correctly handle responses with this status code, primarily for security reasons."
   },
   {
     "number": 306,
@@ -117,12 +117,12 @@
   {
     "number": 401,
     "resp": "Unauthorized",
-    "desc": "Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource. See Basic access authentication and Digest access authentication. 401 semantically means 'unauthenticated', i.e. the user does not have the necessary credentials. Note: Some sites issue HTTP 401 when an IP address is banned from the website (usually the website domain) and that specific address is refused permission to access a website."
+    "desc": "Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource. See <a href='https://en.wikipedia.org/wiki/Basic_access_authentication'>Basic access authentication</a> and <a href='https://en.wikipedia.org/wiki/Digest_access_authentication'>Digest access authentication</a>. 401 semantically means <a href='https://en.wikipedia.org/wiki/Authentication'>'unauthenticated'</a>, i.e. the user does not have the necessary credentials. Note: Some sites issue HTTP 401 when an <a href='https://en.wikipedia.org/wiki/IP_address'>IP address</a> is banned from the website (usually the website domain) and that specific address is refused permission to access a website."
   },
   {
     "number": 402,
     "resp": "Payment Required",
-    "desc": "Reserved for future use. The original intention was that this code might be used as part of some form of digital cash or micropayment scheme, as proposed for example by GNU Taler, but that has not yet happened, and this code is not usually used. Google Developers API uses this status if a particular developer has exceeded the daily limit on requests."
+    "desc": "Reserved for future use. The original intention was that this code might be used as part of some form of <a href='https://en.wikipedia.org/wiki/Digital_cash'>digital cash</a> or <a href='https://en.wikipedia.org/wiki/Micropayment'>micropayment</a> scheme, as proposed for example by GNU Taler, but that has not yet happened, and this code is not usually used. <a href='https://en.wikipedia.org/wiki/Google_Developers'>Google Developers</a> API uses this status if a particular developer has exceeded the daily limit on requests."
   },
   {
     "number": 403,
@@ -137,17 +137,17 @@
   {
     "number": 405,
     "resp": "Method Not Allowed",
-    "desc": "A request method is not supported for the requested resource; for example, a GET request on a form that requires data to be presented via POST, or a PUT request on a read-only resource."
+    "desc": "A request method is not supported for the requested resource; for example, a GET request on a form that requires data to be presented via <a href='https://en.wikipedia.org/wiki/POST_(HTTP)'>POST</a>, or a PUT request on a read-only resource."
   },
   {
     "number": 406,
     "resp": "Not Acceptable",
-    "desc": "The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request. See Content negotiation."
+    "desc": "The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request. See <a href='https://en.wikipedia.org/wiki/Content_negotiation'>Content negotiation</a>."
   },
   {
     "number": 407,
     "resp": "Proxy Authentication Required",
-    "desc": "The client must first authenticate itself with the proxy."
+    "desc": "The client must first authenticate itself with the <a href='https://en.wikipedia.org/wiki/Proxy_server'>proxy</a>."
   },
   {
     "number": 408,
@@ -157,7 +157,7 @@
   {
     "number": 409,
     "resp": "Conflict",
-    "desc": "Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates."
+    "desc": "Indicates that the request could not be processed because of conflict in the request, such as an <a href='https://en.wikipedia.org/wiki/Edit_conflict'>edit conflict</a> between multiple simultaneous updates."
   },
   {
     "number": 410,
@@ -182,17 +182,17 @@
   {
     "number": 414,
     "resp": "URI Too Longe",
-    "desc": "The URI provided was too long for the server to process. Often the result of too much data being encoded as a query-string of a GET request, in which case it should be converted to a POST request. Called 'Request-URI Too Long' previously."
+    "desc": "The <a href='https://en.wikipedia.org/wiki/URI'>URI</a> provided was too long for the server to process. Often the result of too much data being encoded as a query-string of a GET request, in which case it should be converted to a POST request. Called 'Request-URI Too Long' previously."
   },
   {
     "number": 415,
     "resp": "Unsupported Media Type",
-    "desc": "The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format."
+    "desc": "The request entity has a <a href='https://en.wikipedia.org/wiki/Internet_media_type'>media type</a> which the server or resource does not support. For example, the client uploads an image as <a href='https://en.wikipedia.org/wiki/Scalable_Vector_Graphics'>image/svg+xml</a>, but the server requires that images use a different format."
   },
   {
     "number": 416,
     "resp": "Range Not Satisfiable",
-    "desc": "The client has asked for a portion of the file (byte serving), but the server cannot supply that portion. For example, if the client asked for a part of the file that lies beyond the end of the file. Called 'Requested Range Not Satisfiable' previously."
+    "desc": "The client has asked for a portion of the file (<a href='https://en.wikipedia.org/wiki/Byte_serving'>byte serving</a>), but the server cannot supply that portion. For example, if the client asked for a part of the file that lies beyond the end of the file. Called 'Requested Range Not Satisfiable' previously."
   },
   {
     "number": 417,
