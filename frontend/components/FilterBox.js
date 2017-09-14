@@ -12,12 +12,12 @@ class FilterBox extends React.Component {
   }
   render() {
     return (
-      <div className="search-codes">
+      <div className="search-codes" style={{marginLeft: '8%'}}>
         <form onSubmit={e => this.handleSubmit(e)}>
           <div className="form-group">
             <div className="input-group">
               <span className="input-group-addon"><i className="glyphicon glyphicon-search"></i></span>
-              <input placeholder="Start typing a response code number." type="text" className="form-control" onChange={e => this.handleChange(e)} value={this.props.text}></input>
+              <input style={{width: '65%'}} placeholder="Start typing a response code number." type="text" className="form-control" onChange={e => this.handleChange(e)} value={this.props.text}></input>
             </div>
           </div>
         </form>

@@ -30,8 +30,8 @@ class CodesList extends React.Component {
   render() {
     const text = this.props.text;
     return (
-      <div>
-        <ul style={{marginLeft: '35%'}}>
+      <div style={{marginLeft: '7%'}}>
+        <ul>
           {codes.map(code => {
             if (code.number.toString().indexOf(text) != -1) {
               return (

@@ -3,13 +3,24 @@ import React from 'react';
 import { connect } from 'react-redux';
 import FilterBox from '../components/FilterBox';
 import CodesList from '../components/CodesList';
+import Footer from '../components/Footer';
+import CenterList from './CenterList';
+import CenterInput from './CenterInput';
+import CenterFooter from './CenterFooter';
 
 const AppContainer = ({ text, dispatch }) => {
     return (
-        <div>
+      <div>
+        <CenterInput>
           <FilterBox dispatch={dispatch} text={text}/>
+        </CenterInput>
+        <CenterList>
           <CodesList text={text}/>
-        </div>
+        </CenterList>
+        <CenterFooter>
+          <Footer />
+        </CenterFooter>
+      </div>
     );
 };
 
