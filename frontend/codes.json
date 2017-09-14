@@ -202,7 +202,7 @@
   {
     "number": 418,
     "resp": "I'm a teapot",
-    "desc": "This code was defined in 1998 as one of the traditional IETF April Fools' jokes, in RFC 2324, Hyper Text Coffee Pot Control Protocol, and is not expected to be implemented by actual HTTP servers. The RFC specifies this code should be returned by teapots requested to brew coffee. This HTTP status is used as an Easter egg in some websites, including Google.com."
+    "desc": "This code was defined in 1998 as one of the traditional <a href='https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force'>IETF</a> <a href='https://en.wikipedia.org/wiki/April_Fools%27_Day_RFC'>April Fools' jokes</a>, in <a href='https://tools.ietf.org/html/rfc2324'>RFC 2324</a>, <a href='https://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol'>Hyper Text Coffee Pot Control Protocol</a>, and is not expected to be implemented by actual HTTP servers. The RFC specifies this code should be returned by teapots requested to brew coffee. This HTTP status is used as an <a href='https://en.wikipedia.org/wiki/Easter_egg_(media)'>Easter egg</a> in some websites, including <a href='https://google.com'>Google.com</a>."
   },
   {
     "number": 421,
@@ -227,7 +227,7 @@
   {
     "number": 426,
     "resp": "Upgrade Required",
-    "desc": "The client should switch to a different protocol such as TLS/1.0, given in the Upgrade header field."
+    "desc": "The client should switch to a different protocol such as <a href='https://en.wikipedia.org/wiki/Transport_Layer_Security'>TLS/1.0</a>, given in the <a href='https://en.wikipedia.org/wiki/Upgrade_header'>Upgrade header</a> field."
   },
   {
     "number": 428,
@@ -237,7 +237,7 @@
   {
     "number": 429,
     "resp": "Too Many Requests",
-    "desc": "The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes."
+    "desc": "The user has sent too many requests in a given amount of time. Intended for use with <a href='https://en.wikipedia.org/wiki/Rate_limiting'>rate-limiting</a> schemes."
   },
   {
     "number": 431,
@@ -247,7 +247,7 @@
   {
     "number": 451,
     "resp": "Unavailable For Legal Reasons",
-    "desc": "A server operator has received a legal demand to deny access to a resource or to a set of resources that includes the requested resource. The code 451 was chosen as a reference to the novel Fahrenheit 451."
+    "desc": "A server operator has received a legal demand to deny access to a resource or to a set of resources that includes the requested resource. The code 451 was chosen as a reference to the novel <a href='https://en.wikipedia.org/wiki/Fahrenheit_451'>Fahrenheit 451</a>."
   },
   {
     "number": 500,
@@ -262,7 +262,7 @@
   {
     "number": 502,
     "resp": "Bad Gateway",
-    "desc": "The server was acting as a gateway or proxy and received an invalid response from the upstream server."
+    "desc": "The server was acting as a <a href='https://en.wikipedia.org/wiki/Gateway_(telecommunications)'>gateway</a> or proxy and received an invalid response from the upstream server."
   },
   {
     "number": 503,
@@ -282,7 +282,7 @@
   {
     "number": 506,
     "resp": "Variant Also Negotiates",
-    "desc": "Transparent content negotiation for the request results in a circular reference."
+    "desc": "Transparent <a href='https://en.wikipedia.org/wiki/Content_negotiation'>content negotiation</a> for the request results in a <a href='https://en.wikipedia.org/wiki/Circular_reference'>circular reference</a>."
   },
   {
     "number": 507,
@@ -292,7 +292,7 @@
   {
     "number": 508,
     "resp": "Loop Detected",
-    "desc": "The server detected an infinite loop while processing the request (sent in lieu of 208 Already Reported)"
+    "desc": "The server detected an infinite loop while processing the request (sent in lieu of <a href='https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#208'>208 Already Reported</a>)"
   },
   {
     "number": 510,
@@ -302,6 +302,6 @@
   {
     "number": 511,
     "resp": "Network Authentication Required",
-    "desc": "The client needs to authenticate to gain network access. Intended for use by intercepting proxies used to control access to the network (e.g., 'captive portals' used to require agreement to Terms of Service before granting full Internet access via a Wi-Fi hotspot)."
+    "desc": "The client needs to authenticate to gain network access. Intended for use by intercepting proxies used to control access to the network (e.g., <a href='https://en.wikipedia.org/wiki/Captive_portal'>'captive portals'</a> used to require agreement to Terms of Service before granting full Internet access via a <a href='https://en.wikipedia.org/wiki/Hotspot_(Wi-Fi)'>Wi-Fi hotspot</a>)."
   }
 ]
