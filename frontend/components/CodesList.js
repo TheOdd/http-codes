@@ -46,10 +46,10 @@ class CodesList extends React.Component {
           {this.state.showModal ? (
             <div>
               <Modal.Header closeButton>
-                <Modal.Title>{this.state.currentCode.number} - {this.state.currentCode.resp}</Modal.Title>
+                <Modal.Title><h1>{this.state.currentCode.number} - {this.state.currentCode.resp}</h1></Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <p>{ReactHtmlParser(this.state.currentCode.desc)}</p>
+                <p style={{fontSize: 25}}>{ReactHtmlParser(this.state.currentCode.desc)}</p>
               </Modal.Body>
             </div>
           ) : null}
