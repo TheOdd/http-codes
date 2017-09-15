@@ -10,6 +10,9 @@ import CenterFooter from './CenterFooter';
 
 const AppContainer = ({ text, dispatch }) => {
     return (
+      // There are currently 3 Centering components/wrappers (one for each top-level component rendered)
+      // TODO: At some point, it would be preferable to have one Centering component/wrapper that would dynamically align
+      // all of the elements accordingly
       <div>
         <CenterInput>
           <FilterBox dispatch={dispatch} text={text}/>
