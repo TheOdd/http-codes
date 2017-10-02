@@ -5,3 +5,18 @@ ul {
 li {
   font-size: 1.75em;
 }
+
+
+#current-code {
+    font-size: 25px;
+}
+
+/***************** HTTP list *************/
+
+.http-wrapper li i {
+    font-size: 0.553m;
+}
+
+
+/******* Footer *******/
+
