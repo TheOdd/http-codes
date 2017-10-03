@@ -5,14 +5,14 @@ import AppContainer from './AppContainer.js';
 
 // Renders the container with the store prop passed to it for Redux integration
 
-export default function Root({ store }) {
-    return (
-        <Provider store={store}>
-            <AppContainer />
-        </Provider>
-    );
+export default function Root ({ store }) {
+  return (
+    <Provider store={store}>
+      <AppContainer />
+    </Provider>
+  )
 }
 
 Root.propTypes = {
-    store: PropTypes.object.isRequired
+  store: PropTypes.object.isRequired
 };

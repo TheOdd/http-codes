@@ -1,18 +1,20 @@
-import React from 'react';
+import React from 'react'
 
-class FilterBox extends React.Component {
+export default class FilterBox extends React.Component {
   // Function to handle updates in text box. Dispatches new event to Redux store.
-  handleChange(e) {
+  handleChange (e) {
     this.props.dispatch({
       text: e.target.value,
-      type: "UPDATE_TEXT"
-    });
+      type: 'UPDATE_TEXT'
+    })
   }
+
   // Prevent default action of redirecting user to the same page (reloading page)
-  handleSubmit(e) {
+  handleSubmit (e) {
     e.preventDefault()
   }
-  render() {
+
+  render () {
     return (
       <div className="search-codes">
         <form onSubmit={e => this.handleSubmit(e)}>
@@ -27,5 +29,3 @@ class FilterBox extends React.Component {
     )
   }
 }
-
-export default FilterBox;

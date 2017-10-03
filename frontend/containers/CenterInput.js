@@ -8,15 +8,15 @@ import { Grid, Row, Col } from 'react-bootstrap';
 // center component for all of the elements rendered.
 
 export default class CenterInput extends React.Component {
-    render() {
-        return (
-            <Grid>
-                <Row className="show-grid">
-                    <div className="col-md-6 col-md-offset-3">
-                        {this.props.children}
-                    </div>
-                </Row>
-            </Grid>
-        )
-    }
+  render () {
+    return (
+      <Grid>
+        <Row className="show-grid">
+          <div className="col-md-6 col-md-offset-3">
+            {this.props.children}
+          </div>
+        </Row>
+      </Grid>
+    )
+  }
 }

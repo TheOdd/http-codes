@@ -14,7 +14,16 @@ li {
 /***************** HTTP list *************/
 
 .http-wrapper li i {
-    font-size: 0.553m;
+    font-size: 0.553em;
+    cursor: pointer;
+}
+
+.http-wrapper li i:hover {
+    transform: scale(1.1); 
+}
+
+.modal-title {
+    font-size: 36px;
 }
 
 
