@@ -8,15 +8,15 @@ import { Grid, Row, Col } from 'react-bootstrap';
 // center component for all of the elements rendered.
 
 export default class CenterFooter extends React.Component {
-    render() {
-        return (
-            <Grid>
-                <Row className="show-grid">
-                    <Col xs={2} md={2}></Col>
-                    <Col xs={5} md={8}>{this.props.children}</Col>
-                    <Col xs={1} md={2}></Col>
-                </Row>
-            </Grid>
-        )
-    }
+  render () {
+    return (
+      <Grid>
+        <Row className="show-grid">
+          <div className="col-md-12 text-center">
+            {this.props.children}
+          </div>
+        </Row>
+      </Grid>
+    )
+  }
 }
