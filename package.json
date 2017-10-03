@@ -4,10 +4,8 @@
   "description": "Small web app to reference HTTP status code meanings",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack",
-    "dev": "webpack-dev-server --content-base build/",
-    "server": "nodemon ./backend/server.js"
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack-dev-server --content-base build/ --config webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +32,8 @@
     "redux": "^3.7.2"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.5.1"
+    "babel-preset-env": "^1.6.0",
+    "webpack-dev-server": "^2.5.1",
+    "webpack-merge": "^4.1.0"
   }
 }
