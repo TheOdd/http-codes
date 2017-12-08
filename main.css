@@ -1,29 +1,28 @@
 ul {
-  list-style-type: none;
-}
-
-li {
-  font-size: 1.75em;
-}
-
-
-#current-code {
-    font-size: 25px;
-}
-
-/***************** HTTP list *************/
-
-.http-wrapper li i {
-    font-size: 0.553em;
-    cursor: pointer;
-}
-
-.http-wrapper li i:hover {
-    transform: scale(1.1); 
-}
-
-.modal-title {
-    font-size: 36px;
-}
-
-
+    list-style-type: none;
+  }
+  
+  li {
+    font-size: 1.75em;
+  }
+  
+  
+  #current-code {
+      font-size: 25px;
+  }
+  
+  /***************** HTTP list *************/
+  
+  .http-wrapper li i {
+      font-size: 0.553em;
+      cursor: pointer;
+  }
+  
+  .http-wrapper li i:hover {
+      transform: scale(1.1); 
+  }
+  
+  .modal-title {
+      font-size: 36px;
+  }
+  
